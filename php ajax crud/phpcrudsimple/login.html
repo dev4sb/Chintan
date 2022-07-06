@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+   
+    <link rel="stylesheet" href="./css/login.css" >
+    <link rel="stylesheet" href="./css/bs5css.css">
+    
+</head>
+<body>
+
+    
+    <div class="main">
+        <div class="form">
+            <h1>Login</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <form  method="POST">
+                        <p class="text-danger erroruname"></p>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-user mt-2"></i>
+                            <input type="text" class="form-control py-3 w-75 uname" name="fname" placeholder="Enter Your First Name" > 
+                        </div>
+
+                        <p class="text-danger erroremail"></p>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-envelope mt-2"></i>  <input type="email" class="form-control py-3 w-75 mail" name="email" placeholder="Enter your Mail" >
+                        </div>
+
+                        <p class="text-danger errorpass"></p>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-lock mt-2"></i>  <input type="password" class="form-control py-3 w-75 pass" name="password" placeholder="Enter Your Password" >
+                        </div>
+                        
+                        
+                        
+                        <input type="submit" class="login-btn" value="Login"><br>
+                        <!-- <button class="login-btn">click</button><br> -->
+                        New User?
+                         <a class="signup-btn" href="./signup.html">Signup</a>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="./images/loginimg.png" class="img-fluid">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/e4b0bef1bf.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <script>
+       
+        $(document).ready(function(){
+            $('.login-btn').click(function(e){
+                // e.preventDefault();
+                if($(".uname").val() == ""){
+                    e.preventDefault();
+                    $(".erroruname").text("Enter User Name");
+                }else if($(".mail").val() == ""){
+                    e.preventDefault();
+                    $(".erroremail").text("Enter Email id");
+                }else if($(".pass").val() == ""){
+                    e.preventDefault();
+                    $(".errorpass").text("Enter Password");
+                }
+                
+            });
+        
+            
+            $(".login-btn").click(function(){
+                $.ajax({url: "login.php", success: function(result){
+                    $(".main").html(result);
+                }})
+            })
+
+        });
+
+    </script>
+
+    <script src="./js/ajaxcrud.js"></script>
+ 
+</body>
+</html>

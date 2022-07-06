@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.form{
+    background-color: #f9f9ff;
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 20px;
+    width: 800px;
+    padding-top: 30px;
+}
+form{
+    padding-top: 30px;
+
+}
+h1{
+    padding-top: 30px;
+}
+.theme{
+    float: right;
+}
+.theme button{
+    border-radius: 10px;
+}
+.theme button{
+    padding: 0 5px;
+}
+.lname, .fname, .mail, .pass{
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.desc{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.ppic{
+    margin-bottom: 20px;
+}
+.signup-btn{
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #f53f51;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+.signup-btn:hover{
+    background-color: red;
+
+}
+.login-btn{
+    text-decoration: none;
+    background-color:cadetblue;
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+.login-btn:hover{
+    background-color: teal;
+    color: #fff;
+    font-weight: bold;
+}
+.nu{float: right;margin-top: 10px;}
+.lbl{
+    font-weight: bold;
+}
+.reset{
+    float: right;
+}
+
+@media only screen and (max-width: 320px){
+    .uname, .mail, .pass{
+        width: 250px;
+    }
+    .login-btn{
+        width: 250px;
+    }
+    .desc{
+        width: 250px;
+    }
+}

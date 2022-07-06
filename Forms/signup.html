@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./signup.css" >
+    <link rel="stylesheet" href="./bs5css.css" >
+
+    <style>
+        .error {
+  color: #F00;
+  background-color: #FFF;
+}
+    </style>
+
+</head>
+<body>
+    <div>
+        Select Color For:
+        <select class="bg">
+            <option selected disabled >Background</option>
+            <option value="red">Red</option>
+            <option value="Black">Black</option>
+            <option value="white">white</option>
+            <option value="skyblue">skyblue</option>
+            <option value="blue">blue</option>
+            <option value="gold">golden</option>
+            <option value="grey">grey</option>
+        </select>
+
+        <select class="font">
+            <option selected disabled >Font</option>
+            <option value="Red">Red</option>
+            <option value="Black">Black</option>
+            <option value="white">white</option>
+            <option value="skyblue">skyblue</option>
+            <option value="blue">blue</option>
+            <option value="gold">golden</option>
+            <option value="grey">grey</option>
+        </select>
+    </div>
+    <div class="main">
+        <div class="form">
+            <h1>Signup</h1>
+            
+            <p class="theme">Theme<button class="btn-theme" id="themeid" onclick="consol()">Dark</button></p>
+            <form id="signupform" action="login.html">
+                <div class="row">
+                    <div class="col">
+                        <label class="lbl">Profile Pic:</label>
+                        <input type="file" class="ppic" name="profilepic" ><span class="ppicmsg "></span><br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="text" class="form-control fname" name="fname" placeholder="Your First Name" ><span class="fnamemsg text-danger"></span><br>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="text" class="form-control lname" name="lname" placeholder="Your Last Name" ><span class="lnamemsg text-danger"></span><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="email" class="form-control mail" name="email" placeholder="Your Mail" ><span class="mailmsg text-danger"></span><br>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label class="lbl">Gender:</label><span class="genmsg text-danger"></span>
+                        <input type="radio" class="gen"  name="gender">Male
+                        <input type="radio" class="gen"  name="gender">Female
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12"> 
+                        <textarea type="text" class="form-control desc" name="description" placeholder="Description" ></textarea><span class="textareamsg text-danger"></span><br>                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label class="lbl">Hobbies:</label><span class="hobmsg text-danger"></span>
+                        <input type="checkbox" name="hobbies" class="hob" >Sports
+                        <input type="checkbox" name="hobbies" class="hob" >Music
+                        <input type="checkbox" name="hobbies" class="hob" >Reading
+                        <input type="checkbox" name="hobbies" class="hob" >Coding
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="password" class="form-control pass" id="password" name="password" placeholder="Your Password" ><span class="passmsg text-danger"></span><br>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="password" class="form-control pass" name="confpassword" id="password" placeholder="Confirm Password" ><span class="passmsg text-danger"></span><br>
+                    </div>
+                </div>
+
+                <input type="submit" class="signup-btn" value="Sigup" onclick="check()">
+
+                <div class="nu">New User? <a class="login-btn" href="./login.html">Login</a></div>
+            </form>
+        </div>
+        
+    </div>
+
+
+    <script src="./jquery.min.js"></script>
+    <script src="./signupjquery.js"></script>
+    <script src="./jquery.validate.js"></script>
+    <script src="./jquery.validate.min.js"></script>
+</body>
+</html>

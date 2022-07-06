@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            .main{
+                position: relative;
+            }
+            .main::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                left: 0;
+                background: rgba(4, 9, 30, 0.1) url("./heroImage.png");
+                background-size: cover;
+                opacity: .30;
+                background-position: center center;
+            }
+            img{
+                float: left;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div class="main">
+            Before After
+            <img src="./heroImage.png" width="200" height="200">
+        </div>
+    </body>
+</html>

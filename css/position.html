@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            .container{
+              color: red;  
+            }
+            .container::after{
+                content:'';
+                background: url("https://source.unsplash.com/_1EYIHRG014/1600x900")
+no-repeat center/cover;
+/*places an overlay on top of the image*/
+opacity: 0.10;
+/*makes the image visible*/
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            Hello Before After
+        </div>
+        <div class="container">
+            Hello Before After
+        </div>
+        <div class="container">
+            Hello Before After
+        </div>
+    </body>
+</html>

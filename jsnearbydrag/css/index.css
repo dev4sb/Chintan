@@ -4,14 +4,23 @@
     box-sizing: border-box;
     cursor: c;
 }
+body{
+    height: 900px;
+}
 
+#dm{
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    position: absolute;
+}
 .div1{
     height: 0;
     width: 0;
     background-color: aqua;
-    height: 20px;
-    width: 20px;
-    margin: 20px 1100px;
+    height: 50px;
+    width: 50px;
+    margin: 50px 1100px;
 }
 
 .div2{
@@ -19,17 +28,17 @@
     width: 0;
     background-color:
     aquamarine;
-    height: 20px;
-    width: 20px;
-    margin: 20px 400px;
+    height: 50px;
+    width: 50px;
+    margin: 50px 400px;
 }
 
 .div3{
     height: 0;
     width: 0;
     background-color: brown;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     margin: 13px 100px;
 }
 
@@ -37,10 +46,10 @@
     height: 0;
     width: 0;
     background-color: coral;
-    height: 20px;
-    width: 20px;
-    margin-top: 220px;
-    margin: 20px 1000px;
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    margin: 50px 1000px;
 }
 
 .div5{
@@ -48,8 +57,8 @@
     width: 0;
     background-color: cornflowerblue;
     margin-top: 0;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     margin: 50px 500px;
 }
 
@@ -57,8 +66,8 @@
     height: 0;
     width: 0;
     background-color: darkcyan;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     margin: 0px 750px;
 }
 
@@ -66,7 +75,7 @@
     height: 0;
     width: 0;
     background-color: darkslateblue;
-    height: 20px;
-    width: 20px;
-    margin: 20px 300px;
+    height: 50px;
+    width: 50px;
+    margin: 50px 300px;
 }
